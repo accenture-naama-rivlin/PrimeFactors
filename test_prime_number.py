@@ -17,5 +17,11 @@ class TestPrimeNumber(unittest.TestCase):
     def test_five_returns_five(self):
         self.assertEqual([5], self.number.factorize(5))
 
+    def test_six_returns_two_three(self):
+        self.assertEqual([2, 3], self.number.factorize(6))
+
+    def test_twenty_one_returns_three_seven(self):
+        self.assertEqual([2, 3], self.number.factorize(6))
+
 if __name__ == "__main__":
     unittest.main()
