@@ -14,5 +14,8 @@ class TestPrimeNumber(unittest.TestCase):
     def test_four_returns_two_two(self):
         self.assertEqual([2, 2], self.number.factorize(4))
 
+    def test_five_returns_five(self):
+        self.assertEqual([5], self.number.factorize(5))
+
 if __name__ == "__main__":
     unittest.main()
